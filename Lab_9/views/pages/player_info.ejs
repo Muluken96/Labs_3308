@@ -31,30 +31,35 @@
 							 			If a player has been selected, fill in their information in each of the fields below.
 							 		    You'll need to calculate here the player's average rushing, receiving, and passing yards.-->
 							<th>Year</th>
-							<td> <%if(player)	
-								{%>
-									<%- player.year %>
-								<% }%></td>							   
+							<td> <% if(res_2) {var yearsOfPlaying = res_2.year} %>
+								<%- yearsOfPlaying %> </td>	
+						   
 						</tr>
 						<tr>
 							<th>Major</th>
-							<td>	</td>
+							<td> <% if(res_2) {var majorIn = res_2.major} %>
+								<%- majorIn %> </td>
 						</tr>
 						<tr>
 							<th>Games Played</th>
-							<td>	</td>
+							<td> <% if(res_3) {var numPlayed = res_3.count} %>
+								<%- numPlayed %> </td>
+								
 						</tr>
 						<tr>
-							<td>Passing Yards: </td>
-							<td>Avg. Passing Yards: </td>
+							<td>Passing Yards: <% if(res_2) {var numPassing = res_2.passing_yards} %>
+								<%- numPassing %></td>
+							<td>Avg. Passing Yards: <%- numPassing/numPlayed %> </td>
 						</tr>
 						<tr>
-							<td>Rushing Yards: </td>
-							<td>Avg. Rushing Yards: </td>
+							<td>Rushing Yards: <% if(res_2) {var numRushing = res_2.rushing_yards} %>
+								<%- numRushing %></td>
+							<td>Avg. Rushing Yards: <%- numRushing/numPlayed %></td>
 						</tr>
 						<tr>
-							<td>Receiving Yards: </td>
-							<td>Avg. Receiving Yards: </td>
+							<td>Receiving Yards: <% if(res_2){var numReceiving = res_2.receiving_yards} %>
+								<%- numReceiving %></td>
+							<td>Avg. Receiving Yards: <%- numReceiving/numPlayed %></td>
 						</tr>
 					</table>
 				</div>
