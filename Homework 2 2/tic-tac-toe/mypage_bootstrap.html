@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+
+        img {
+          border-radius: 90%;
+        }
+
+
+        </style>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="mypage_boostrap.html">Profile</a>
+              </li>
+              
+              <br>
+              <br>
+
+              <li class="nav-item">
+                <a class="nav-link" href="file:///Users/mulukenchekilie/Documents/GitHub/Homework%202%202/signup-modal/login.html">Sign Up Modal</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="file:///Users/mulukenchekilie/Documents/GitHub/Homework%202%202/tic-tac-toe/index.html">Tic Tac Toe Game</a>
+              </li>
+            </ul>
+            <div class="ml-auto">
+                <a class="nav-link" href="https://github.com/Muluken96/Labs_3308.git">
+                    <img src="Mypic.png" width="40">
+                </a>
+            </div>
+          </nav>
+
+    </head>
+    <body>
+        <div class="container-md">
+            <br></br>
+            <h1 class="display-2">Muluken Chekilie</h1>
+            <br>
+            </br>
+            <div class="card" >
+                <div class="card-body">
+                    <p style="width:80%"> I am sociable with anybody. when I get free time, I like to play soccer.The reason why I am studing computer science is
+                    I want to learn something new as it is growing rapidly. I aslo want to iinvent and building solutions.</p>
+                </div>
+            </div>
+        </div>
+
+            <br>
+            </br>
+            
+            <img src="Mypic.png" alt="Avatar" style="width:500px;height:600px;">
+            <br>
+            </br>
+          <table>
+            <h1>My Favorite Projects </h1>
+            <table>
+            	<tr>
+            		<th>Name of The Project</th>
+                <th>Technology Used</th>
+            	</tr>
+              <tr>
+            		<th>Linux</th>
+                <th>C</th>
+            	</tr>
+              <tr>
+            		<th>Git</th>
+                <th>C++, Shell, Perl, python</th>
+            	</tr>
+              <tr>
+            		<th>Chrome OS</th>
+                <th>C, C++</th>
+            	</tr>
+            </table>
+
+
+            <br>
+            </br>
+
+
+        <div class="container">
+            <div class="row">
+                <h3 class="col">Interests</h3>
+                <a href="form.html" class="col">
+                <button type="button" class="btn btn-primary    " style="color: rgb(255, 255, 255) ;">Add Interest</button>
+                </a>
+            </div>
+            <br>
+        </br>
+            <div class="row">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="operating.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <button class = "button" type = "button" onclick="addCard('interset1')">+</button>
+                      <script>
+                      function addCard(id)
+                      {
+                        var tweet = $('<div class = "card" > more </div>');
+                        tweet.appendTo(id);
+                      }
+                      </script>
+
+                      <h5 class="card-title">Operating business</h5>
+                      <p class="card-text">I like doing busssines becasue I earn money.</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="helping.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Serving people</h5>
+                      <p class="card-text">I like to help peoples what I can </p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 12rem;">
+                    <img class="card-img-top " src="soccer.jpg" alt="Card image" widht="10">
+                    <div class="card-body">
+                      <h5 class="card-title">Soccer</h5>
+                      <p class="card-text">I like playing soccer in my free time.</p>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+        <br>
+        </br>
+        <br>
+        </br>
+    </body>
+
+</html>
